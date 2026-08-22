@@ -1,6 +1,6 @@
 print("================================================================")
-print("==================== { EXPENSE COUNTER } ====================")
-print("================================================================")
+print("==================== { EXPENSE COUNTER } =======================")
+print("================================================================\n")
 
 balance = int(input("Enter the opening balance: "))
 spent = 0
@@ -11,11 +11,13 @@ cut = "not"
 while cut == "not":
     print("Available balance:", balance)
     spent = int(input("Enter the expense: "))
-    
+
+
     balance = balance - spent
     counter = counter + 1
     total = total + spent
-    
+
+
     if balance < 0:
         print("The expense is greater than the available balance.")
         balance = balance + spent

@@ -1,6 +1,10 @@
+print("======================================================================")
+print("============================= { DIE } ================================")
+print("======================================================================\n\n\n")
+
 limit = int(input("Enter a limit: "))
 counter = 0
-total = 0
+
 
 side1 = 0
 side2 = 0
@@ -17,9 +21,6 @@ while counter < limit:
     if number < 1 or number > 6:
         print("Invalid number. Must be between 1 and 6.")
         counter = counter - 1 
-    else:
-        total = total + number
-        
         if number == 1:
             side1 = side1 + 1
         elif number == 2:
@@ -41,6 +42,9 @@ average_side4 = (side4 / limit) * 100
 average_side5 = (side5 / limit) * 100
 average_side6 = (side6 / limit) * 100
 
+print("======================================================================")
+print("============================= { RESULT } =============================")
+print("======================================================================")
 
 print(f"\nSide 1: {average_side1}%")
 print(f"Side 2: {average_side2}%")
