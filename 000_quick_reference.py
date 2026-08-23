@@ -12,6 +12,7 @@ len()     -> Calculates the length/count of items in a string or collection.
 int()     -> Converts a compatible value to an integer (whole number).
 float()   -> Converts a value to a floating-point number (decimal).
 str()     -> Converts a value to its string representation.
+range()   -> Generates a sequence of numbers (start, stop, step).
 
 2. ARITHMETIC OPERATORS
 ----------------------------------------------------------------------
@@ -38,25 +39,27 @@ and  -> Returns True if both conditions evaluate to True.
 or   -> Returns True if at least one condition evaluates to True.
 not  -> Inverts the boolean result (True becomes False, and vice versa).
 
-5. CONTROL FLOW (Conditional Statements)
+5. CONTROL FLOW (Conditionals & Loops)
 ----------------------------------------------------------------------
-if    -> Executes a block of code if its condition is True.
-elif  -> (Else If) Evaluates an alternative condition if preceding ones were False.
-else  -> Fallback block; executes if none of the above conditions were met.
+if       -> Executes code block if condition is True.
+elif     -> Evaluates alternative condition if preceding ones were False.
+else     -> Fallback block; executes if no conditions were met.
+while    -> Repeats a block of code as long as a condition is True.
+for      -> Iterates over a sequence (range, string, list, etc.).
+break    -> Terminates the loop immediately.
+continue -> Skips the rest of the current iteration and moves to the next.
 
-6. LOOPS & ACCUMULATORS
+6. SEQUENCE OPERATIONS & ACCUMULATORS
 ----------------------------------------------------------------------
-while -> Repeats a code block as long as a condition remains True.
-+=    -> In-place addition operator (e.g., x += 1 increments x by 1).
++=, -=   -> In-place arithmetic assignment operators.
+[index]  -> Accesses an element at a specific zero-based index.
 
-7. DATA TYPES & LITERAL EXAMPLES
-----------------------------------------------------------------------
+======================================================================
 """
 
-# Type checking examples:
+# Checking data types using type()
 print(type("I am a string"))          # Type 'str'
 print(type(42))                        # Type 'int'
 print(type(3.14159))                   # Type 'float'
-print(type(3 + 4j))                    # Type 'complex'
 print(type(True))                      # Type 'bool'
 print(type(print("Hello, world!")))    # Type 'NoneType'
