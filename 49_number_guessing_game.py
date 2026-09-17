@@ -1,7 +1,6 @@
 import random
 
 number = random.randint(1, 30)
-print(number)
 number_user = 0
 attempts = 5
 cut = False
