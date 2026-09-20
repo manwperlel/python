@@ -51,4 +51,5 @@ for country, capital in capitals.items():
 
 # Clear all entries from the dictionary
 capitals.clear()
+
 print(capitals)
