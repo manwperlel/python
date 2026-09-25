@@ -4,6 +4,8 @@ number = random.randint(1, 30)
 number_user = 0
 attempts = 5
 cut = False
+
+
 while cut == False:
     number_user = int(input("ingrese un numero:"))
 
@@ -19,8 +21,11 @@ while cut == False:
     else:
         cut = True
 
+
     if attempts == 0:
         cut = True
+
+
 
 if attempts > 0:
     print(f"ganaste! lo lograte en {attempts} intentos")
