@@ -1,0 +1,1 @@
+apuesta = int(input("ingrese el total de la apuesta:"))
