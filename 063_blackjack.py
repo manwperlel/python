@@ -10,6 +10,7 @@ carta_figura_random = [10, "J", "Q", "K"]
 dinero = 100
 numero_mano = []
 numero_mano_dealer = []
+jugadas = 2
 
 
 
@@ -23,6 +24,11 @@ def dealer_carta():
         color = random.choice(colores)
 
         carta_dealer = (color, number)
+
+        if number == 10:
+                    figura = carta_figura()
+                    carta_dealer = (color, figura)
+                    print(figura)
 
         if carta_dealer not in deck:
             break
@@ -105,7 +111,7 @@ while True:
 
     except ValueError:
         print("\n\nporfavor ingrese un numero valido\n")
-        print(f"DINERO DISPO    NIBLE: {dinero}")
+        print(f"DINERO DISPONIBLE: {dinero}")
 
 
 print(f"\n\ndinero actual:{dinero}")
@@ -125,7 +131,7 @@ print(f"mano del dealer:{mano_dealer}")
 print(f"suma total del delaer:{total_dealer}\n\n")
 
 
-"TOMAR DESICION"
+"TOMAR DECISION"
 
 while True:
     try:
@@ -138,6 +144,8 @@ while True:
                 print(f"\n\nmano actual:{mano}\n\n")
                 total = sum(numero_mano)
                 print(f"suma total de los valores es {total}\n\n")
+                jugadas = jugadas + 1
+                print(f"jugadas totales:{jugadas}")
 
             elif decision == 2:
                 break
@@ -147,8 +155,8 @@ while True:
                 print(f"\n\nmano actual:{mano}")
                 print(f"suma total de los valores es {total}\n\n")
 
-            """if total > 21:
-                break"""
+            if total > 21:
+                break
 
     except ValueError:
         print("\n\n\n\nPORFAVOR INGRESE UN NUMERO VALIDO")
