@@ -1,6 +1,6 @@
-def suma(x, y, z):
-    resultado = x + y + z
-    return resultado
+def add(x, y, z):
+    result = x + y + z
+    return result
 
-resultado = suma(1, 4, 6)
-print(resultado)
+result = add(1, 4, 6)
+print(result)

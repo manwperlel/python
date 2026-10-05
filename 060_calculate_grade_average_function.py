@@ -1,8 +1,8 @@
-def nota(clase):
-    return sum(clase) / len(clase)
+def calculate_grade_average(class_grades):
+    return sum(class_grades) / len(class_grades)
 
-clase = [1,5,8,6,]
+class_grades = [1, 5, 8, 6]
 
-resultado = nota(clase)
+result = calculate_grade_average(class_grades)
 
-print(resultado)
+print(result)

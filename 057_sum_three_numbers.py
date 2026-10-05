@@ -1,5 +1,5 @@
-def suma(x, y, z):
-    resultado = x + y + z
-    print(resultado)
+def add(x, y, z):
+    result = x + y + z
+    print(result)
 
-suma(1, 3, 5)
+add(1, 3, 5)

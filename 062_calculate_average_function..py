@@ -1,7 +1,7 @@
-def media(num_1, num_2, num_3):
-    suma = num_1 + num_2 + num_3
-    promedio = suma / 3
-    return promedio
+def calculate_average(num_1, num_2, num_3):
+    total_sum = num_1 + num_2 + num_3
+    average = total_sum / 3
+    return average
 
-llamada = media(2, 2, 5)
-print(llamada)
+result = calculate_average(2, 2, 5)
+print(result)

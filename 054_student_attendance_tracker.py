@@ -1,15 +1,15 @@
-lista_de_estudiantes = {}
+student_list = {}
 
 while True:
-    name_estudiante = input("inserte el nombre del estudiante:")
+    student_name = input("Insert the student's name:")
 
-    if name_estudiante== "0":
+    if student_name == "0":
         break
 
-    presente = input("el estudiante esta presente?:")
+    present = input("Is the student present?:")
 
-    lista_de_estudiantes.update({name_estudiante: presente})
+    student_list.update({student_name: present})
 
-for estudiante, presente in lista_de_estudiantes.items():
-    print(f"{estudiante}: {presente}")
-print(lista_de_estudiantes)
+for student, present in student_list.items():
+    print(f"{student}: {present}")
+print(student_list)
